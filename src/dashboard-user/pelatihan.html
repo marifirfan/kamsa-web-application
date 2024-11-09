@@ -9,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="font-Montserrat">
     <nav
         class="h-[100px] bg-white bg-opacity-75 backdrop-blur-sm flex items-center justify-between px-4 md:px-[170px] sticky top-0 z-10">
         <!-- Logo NEXUS -->
@@ -39,17 +39,8 @@
             <li><a href="bantuan.html"
                     class="text-silver-custom1 transition duration-300 hover:text-blue-black   hover:rounded-sm">Bantuan</a>
             </li>
-            <li><a href="tentangkami.html"
-                    class="text-silver-custom1 transition duration-300 hover:text-blue-black   hover:rounded-sm">Tentang
-                    Kami</a></li>
+
         </ul>
-
-
-        <!-- Search Bar -->
-        <div class="flex items-center xl:w-[300px] tablet:w-[220px] phone:w-[100px]">
-            <input type="text" placeholder="Search..."
-                class="w-full px-4 py-2 text-gray-800 rounded-md outline-slate-900 focus:bg-transparent bg-gray-100" />
-        </div>
 
         <!-- Profile Dropdown (Sign In/Sign Up converted to Profile) -->
         <ul
@@ -75,11 +66,10 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="absolute top-[100px] left-0 w-full bg-white shadow-md hidden">
             <ul class="flex flex-col space-y-4 p-4">
-                <li><a href="#" class="hover:text-silver-custom1 transition duration-300">Katalog</a></li>
-                <li><a href="#" class="hover:text-silver-custom1 transition duration-300">Pelatihan</a></li>
-                <li><a href="#" class="hover:text-silver-custom1 transition duration-300">Magang</a></li>
-                <li><a href="#" class="hover:text-silver-custom1 transition duration-300">Bantuan</a></li>
-                <li><a href="#" class="hover:text-silver-custom1 transition duration-300">Tentang Kami</a></li>
+                <li><a href="katalog.html" class="hover:text-silver-custom1 transition duration-300">Katalog</a></li>
+                <li><a href="pelatihan.html" class="hover:text-silver-custom1 transition duration-300">Pelatihan</a>
+                </li>
+                <li><a href="bantuan.html" class="hover:text-silver-custom1 transition duration-300">Bantuan</a></li>
                 <li class="text-silver-custom1 hover:text-blue-600 transition duration-300 text-sm"><a
                         href="SignIn.html">Sign in</a></li>
                 <li>
@@ -91,6 +81,174 @@
             </ul>
         </div>
     </nav>
+
+    <script>
+        // Toggle the profile dropdown on click
+        document.getElementById('profile-button').addEventListener('click', function () {
+            var dropdown = document.getElementById('profile-dropdown');
+            dropdown.classList.toggle('hidden');
+        });
+    </script>
+    <script src="/src/navbar.js">
+    </script>
+    <!-- konten1 -->
+    <!-- Hero -->
+    <div class="overflow-hidden">
+        <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="relative mx-auto max-w-4xl grid space-y-5 sm:space-y-10">
+                <!-- Title -->
+                <div class="text-center">
+                    <p class="text-xs font-semibold text-gray-500 tracking-wide uppercase mb-3">
+                        Kamsa Store Toko Kebutuhan Ternak
+                    </p>
+                    <h1 class="text-[24px] text-gray-800 font-bold sm:text-64 lg:text-3xl lg:leading-tight">
+                        Pelatihan bersertifikat dan juga <span class="text-blue-500">Bisa Magang juga loh!</span>
+                    </h1>
+                </div>
+                <!-- End Title -->
+
+                <!-- Avatar Group -->
+                <div class="sm:flex sm:justify-center sm:items-center text-center sm:text-start">
+                    <div class="shrink-0 pb-5 sm:flex sm:pb-0 sm:pe-5">
+                        <!-- Avatar Group -->
+                        <div class="flex justify-center -space-x-3">
+                            <img class="inline-block size-8 rounded-full ring-2 ring-white"
+                                src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+                                alt="Avatar">
+                            <img class="inline-block size-8 rounded-full ring-2 ring-white"
+                                src="https://images.unsplash.com/photo-1531927557220-a9e23c1e4794?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+                                alt="Avatar">
+                            <img class="inline-block size-8 rounded-full ring-2 ring-white"
+                                src="https://images.unsplash.com/photo-1541101767792-f9b2b1c4f127?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&&auto=format&fit=facearea&facepad=3&w=300&h=300&q=80"
+                                alt="Avatar">
+                            <img class="inline-block size-8 rounded-full ring-2 ring-white"
+                                src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+                                alt="Avatar">
+                            <span
+                                class="inline-flex items-center justify-center size-8 rounded-full ring-2 ring-white bg-gray-800">
+                                <span class="text-xs font-medium leading-none text-white uppercase">7k+</span>
+                            </span>
+                        </div>
+                        <!-- End Avatar Group -->
+                    </div>
+
+                    <div
+                        class="border-t sm:border-t-0 sm:border-s border-gray-200 w-32 h-px sm:w-auto sm:h-full mx-auto sm:mx-0">
+                    </div>
+
+                    <div class="pt-5 sm:pt-0 sm:ps-5">
+                        <div class="text-lg font-semibold text-gray-800">Trust pilot</div>
+                        <div class="text-sm text-gray-500">Rated best over 37k reviews</div>
+                    </div>
+                </div>
+                <!-- End Avatar Group -->
+                <!-- konten -->
+                <div class="p-4 mx-auto lg:max-w-7xl sm:max-w-full">
+                    <div
+                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 mb-16 drop-shadow-2xl">
+                        <!-- Card 1 -->
+                        <div
+                            class="bg-white rounded-2xl p-5 cursor-pointer hover:-translate-y-2 transition-all relative">
+                            <div class="w-full h-[210px] overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-4">
+                                <img src="/img/pelatihan/pelatihan (1).jpg" alt="Course Image"
+                                    class="h-full w-full object-contain" />
+                            </div>
+
+                            <div>
+                                <h3 class="text-lg font-extrabold text-gray-800">Course Title</h3>
+                                <p class="text-gray-600 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                    Vestibulum vehicula leo vitae erat pharetra, eget feugiat sem vestibulum.</p>
+                                <h4 class="text-lg text-gray-800 font-bold mt-4">$99</h4>
+
+                                <!-- Button to apply -->
+                                <a href="#"
+                                    class="mt-4 block text-center text-white bg-silver-custom2 hover:bg-gray-900 rounded-full py-2 px-4 transition duration-300">
+                                    Apply Now
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div
+                            class="bg-white rounded-2xl p-5 cursor-pointer hover:-translate-y-2 transition-all relative">
+                            <div class="w-full h-[210px] overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-4">
+                                <img src="/img/pelatihan/pelatihan (2).jpg" alt="Course Image"
+                                    class="h-full w-full object-contain" />
+                            </div>
+
+                            <div>
+                                <h3 class="text-lg font-extrabold text-gray-800">Course Title</h3>
+                                <p class="text-gray-600 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                    Vestibulum vehicula leo vitae erat pharetra, eget feugiat sem vestibulum.</p>
+                                <h4 class="text-lg text-gray-800 font-bold mt-4">$99</h4>
+
+                                <!-- Button to apply -->
+                                <a href="#"
+                                    class="mt-4 block text-center text-white bg-silver-custom2 hover:bg-gray-900 rounded-full py-2 px-4 transition duration-300">
+                                    Apply Now
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div
+                            class="bg-white rounded-2xl p-5 cursor-pointer hover:-translate-y-2 transition-all relative">
+                            <div class="w-full h-[210px] overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-4">
+                                <img src="/img/pelatihan/pelatihan (3).jpg" alt="Course Image"
+                                    class="h-full w-full object-contain" />
+                            </div>
+
+                            <div>
+                                <h3 class="text-lg font-extrabold text-gray-800">Course Title</h3>
+                                <p class="text-gray-600 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                    Vestibulum vehicula leo vitae erat pharetra, eget feugiat sem vestibulum.</p>
+                                <h4 class="text-lg text-gray-800 font-bold mt-4">$99</h4>
+
+                                <!-- Button to apply -->
+                                <a href="#"
+                                    class="mt-4 block text-center text-white bg-silver-custom2 hover:bg-gray-900 rounded-full py-2 px-4 transition duration-300">
+                                    Apply Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- FOOTER 2 -->
+
+        <footer class="bg-white rounded-lg shadow-xl m-4">
+            <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+                <div class="sm:flex sm:items-center sm:justify-between">
+                    <a href="Landingpage.html" class="w-[80px] h-[80px] tablet:w-[40px] tablet:h-[40px] phone:hidden">
+                        <img src="/img/kamsa/KAMSA KOGO 1.png" alt="KAMSA logo" />
+                    </a>
+
+                    <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-silver-custom1 sm:mb-0 ">
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">About</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                <span class="block text-sm text-silver-custom1 sm:text-center">© 2024 <a href=""
+                        class="hover:underline">Kamsa Store Application™</a>. All Rights Reserved.</span>
+            </div>
+        </footer>
+
 </body>
 
 </html>
