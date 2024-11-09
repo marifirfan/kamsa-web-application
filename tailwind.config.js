@@ -25,7 +25,8 @@ module.exports = {
       },
       backgroundImage: {
         'landing-page2': "url('/img/kamsa/backgrond222.png')",
-      }
+      },
+      
     },
   },
   plugins: [],
